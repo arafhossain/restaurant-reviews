@@ -34,6 +34,10 @@ self.addEventListener('install', function (event) {
   )
 })
 
+self.addEventListener('activate', event => {
+  console.log('Now ready to handle fetches!');
+});
+
 
 self.addEventListener('fetch', function (event) {
   event.respondWith(
