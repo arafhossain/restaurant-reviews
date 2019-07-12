@@ -8,7 +8,7 @@ body,td,th,p{
 	line-height: 1.5;
 }
 body {
-	background-color: #fdfdfd;
+	background-color: #eee;
 	margin: 0;
 	position:relative;
 }
@@ -247,9 +247,10 @@ nav h1 a {
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
   width: 50%;
+  background-color: #f3f3f3;
 }
 #reviews-container {
-  padding: 30px 40px 80px;
+  padding: 30px 10px 80px;
 }
 #reviews-container h2 {
   color: #f58500;
@@ -286,23 +287,57 @@ nav h1 a {
   font-size: 10px;
 }
 
-/* Media Breakpoints */
-/* First styles are for smaller devices with less than 600px of width */
+/* Breakpoints */
 
-/* This applies to devices with a viewport between 600px and 1023px */
-
-/*
-@media screen and (min-width: 600px) {
-  nav {
-    background-color: green;
-  }
+@media screen and (max-width: 420px) {
+  .inside #map-container {
+  height: 10%;
+  width: 100%;
+  top: 80px;
+  position: absolute;
 }
 
-/* This applies to devices with a viewport >= 1024px */
-/*
-@media screen and (min-width: 1024px) {
-  nav {
-    background-color: red;
-  }
+.inside header {
+  position: relative;
 }
-*/
+
+#breadcrumb {
+    background-color: #eee;
+    width: auto;
+    text-align: center;
+}
+
+#restaurant-container, #reviews-container {
+  padding: 0;
+  width: 100%;
+  top: 180px;
+  position: relative;
+}
+}
+
+#restaurant-name {
+  margin-bottom: 10px;
+  font-size: 18pt;
+}
+
+#reviews-list {
+  max-width: 100%;
+}
+
+#reviews-list li p {
+  font-size: 12px;
+  padding: 0;
+}
+
+.inside #footer {
+  position: relative;
+  max-width: 100%; 
+}
+
+#footer {
+  top: 170px;
+}
+
+#restaurant-hours td {
+  font-size: 14px;
+}
